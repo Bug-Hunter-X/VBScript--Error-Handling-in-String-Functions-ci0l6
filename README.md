@@ -1,0 +1,3 @@
+# VBScript: Error Handling in String Functions
+
+This repository demonstrates a common error in VBScript string manipulation: failure to handle `Null` values. The `bug.vbs` file contains a function that throws an error when given a `Null` string input, while `bugSolution.vbs` provides a corrected version with improved error handling.  The issue arises from the `Len` function's inability to handle `Null` inputs directly, leading to a `Type mismatch` error.  The solution adds an explicit check for `Null` values before attempting to calculate the string length.
